@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "webNahuel"
+    }
+  },
+  "defaultProject": "webNahuel",
+  "cli": {
+    "analytics": false
+  }
 }

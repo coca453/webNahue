@@ -3,10 +3,30 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { PageComponent } from './components/page/page.component';
+import { NavbarComponent } from './components/header/navbar/navbar.component';
+import { ServiciosComponent } from './components/page/servicios/servicios.component';
+import { SeguridadComponent } from './components/page/seguridad/seguridad.component';
+import { InstitucionalComponent } from './components/page/institucional/institucional.component';
+import { MisionComponent } from './components/page/mision/mision.component';
+import { VisionComponent } from './components/page/vision/vision.component';
+import { ContactoComponent } from './components/page/contacto/contacto.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    PageComponent,
+    NavbarComponent,
+    ServiciosComponent,
+    SeguridadComponent,
+    InstitucionalComponent,
+    MisionComponent,
+    VisionComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
