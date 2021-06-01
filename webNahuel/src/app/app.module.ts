@@ -10,8 +10,8 @@ import { NavbarComponent } from './components/header/navbar/navbar.component';
 import { ServiciosComponent } from './components/page/servicios/servicios.component';
 import { SeguridadComponent } from './components/page/seguridad/seguridad.component';
 import { InstitucionalComponent } from './components/page/institucional/institucional.component';
-import { MisionComponent } from './components/page/mision/mision.component';
-import { VisionComponent } from './components/page/vision/vision.component';
+import { MisionComponent } from './components/page/institucional/mision/mision.component';
+import { VisionComponent } from './components/page/institucional/vision/vision.component';
 import { ContactoComponent } from './components/page/contacto/contacto.component';
 
 @NgModule({
@@ -26,7 +26,7 @@ import { ContactoComponent } from './components/page/contacto/contacto.component
     InstitucionalComponent,
     MisionComponent,
     VisionComponent,
-    ContactoComponent
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
