@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { timer } from 'rxjs';
+import { Subscription, timer } from 'rxjs';
 
 @Component({
   selector: 'app-carrousel',
@@ -7,42 +7,44 @@ import { timer } from 'rxjs';
   styleUrls: ['./carrousel.component.css']
 })
 export class CarrouselComponent implements OnInit {
-  
 
-  imagen : number;
+  subscription: Subscription;
+  imagen: number;
+  source = timer(1000, 3500);
+
   constructor() {
     this.imagen = 0;
-   }
-
-  ngOnInit(): void {
-    
-    this.observableTimer();
-  }
-  observableTimer(){
-    const source = timer(1000,3500);
-    const abc = source.subscribe(val => {
-      console.log(val, '-', val % 3);
-      switch(val % 3){
-        case 0:{
-          console.log('Imagen 1');
+    this.subscription = this.source.subscribe(val => {
+      switch (val % 3) {
+        case 0: {
           this.imagen = val;
           break
         }
-        case 1:{
-          console.log('Imagen 2');
+        case 1: {
           this.imagen = val;
           break
         }
-        case 2:{
-          console.log('Imagen 3');
+        case 2: {
           this.imagen = val;
           break
         }
       }
-    })
+    });
   }
-  
+
+  ngOnInit(): any {
+
+  }
+
+  ngOnDestroy(): void {
+    //Called once, before the instance is destroyed.
+    //Add 'implements OnDestroy' to the class.
+    this.subscription.unsubscribe();
+  }
+
 }
+
+
 
 
 

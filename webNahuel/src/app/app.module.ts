@@ -12,10 +12,11 @@ import { PageModule } from './page/page.module';
 import { AppRoutingModule } from './app-routing.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

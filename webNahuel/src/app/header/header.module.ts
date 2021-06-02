@@ -26,7 +26,8 @@ import { CommonModule } from '@angular/common';
   ],
   exports: [
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    CarrouselComponent
   ]
 })
 export class HeaderModule { }
