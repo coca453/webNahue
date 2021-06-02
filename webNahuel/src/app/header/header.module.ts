@@ -6,6 +6,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header.component';
 import { PageModule } from '../page/page.module';
 import { PageRoutingModule } from '../page/page.routing';
+import { BrandComponent } from './brand/brand.component';
+import { CarrouselComponent } from './carrousel/carrousel.component';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -13,10 +16,13 @@ import { PageRoutingModule } from '../page/page.routing';
 @NgModule({
   declarations: [
       NavbarComponent,
-      HeaderComponent
+      HeaderComponent,
+      BrandComponent,
+      CarrouselComponent
   ],
   imports: [
     RouterModule,
+    CommonModule
   ],
   exports: [
     HeaderComponent,
