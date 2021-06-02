@@ -4,13 +4,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 
+import { InstitucionalModule } from './institucional/institucional.module';
+import { PageRoutingModule } from './page.routing';
 
 import { PageComponent } from './page.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { SeguridadComponent } from './seguridad/seguridad.component';
 import { ServiciosComponent } from './servicios/servicios.component';
-import { InstitucionalComponent } from './institucional/institucional.component';
-import { PageRoutingModule } from './page.routing';
 import { HomeComponent } from './home/home.component';
 
 
@@ -21,20 +21,21 @@ import { HomeComponent } from './home/home.component';
         ContactoComponent,
         SeguridadComponent,
         ServiciosComponent,
-        InstitucionalComponent,
+        
         HomeComponent
   ],
   imports: [
     RouterModule,
     CommonModule,
-    PageRoutingModule
+    PageRoutingModule,
+    InstitucionalModule
   ],
   exports: [
     PageComponent,
     ContactoComponent,
     SeguridadComponent,
     ServiciosComponent,
-    InstitucionalComponent,
+    
   ]
 })
 export class PageModule { }
