@@ -11,6 +11,7 @@ import { SeguridadComponent } from './seguridad/seguridad.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { InstitucionalComponent } from './institucional/institucional.component';
 import { PageRoutingModule } from './page.routing';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -20,7 +21,8 @@ import { PageRoutingModule } from './page.routing';
         ContactoComponent,
         SeguridadComponent,
         ServiciosComponent,
-        InstitucionalComponent
+        InstitucionalComponent,
+        HomeComponent
   ],
   imports: [
     RouterModule,

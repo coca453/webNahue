@@ -5,6 +5,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { InstitucionalComponent } from './institucional/institucional.component';
 import { SeguridadComponent } from './seguridad/seguridad.component';
 import { ServiciosComponent } from './servicios/servicios.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -13,7 +14,7 @@ const routes: Routes = [
     {   path: '', 
         component: PageComponent,
         children:[
-              {path: '', component: PageComponent},
+              {path: '', component: HomeComponent},
               {path: 'contacto', component: ContactoComponent},
               {path: 'institucional', component: InstitucionalComponent},
               {path: 'seguridad', component: SeguridadComponent},
