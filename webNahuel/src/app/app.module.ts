@@ -10,6 +10,8 @@ import { HeaderModule } from './header/header.module';
 import { PageModule } from './page/page.module';
 //import { PageRoutingModule } from './page/page.routing.ts.bko';
 import { AppRoutingModule } from './app-routing.module';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -22,7 +24,9 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     HeaderModule,
     PageModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MDBBootstrapModule.forRoot(),
+    BrowserAnimationsModule
     
     //PageRoutingModule
 

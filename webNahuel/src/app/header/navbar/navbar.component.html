@@ -1,4 +1,37 @@
-<nav class="navbar navbar-expand-lg navbar-default">
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo ">
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand"  routerLink="home">Home</a></mdb-navbar-brand>
+  <!-- Collapsible content -->
+  <links>
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light" [routerLink]="['/institucional']" mdbWavesEffect> Institucional </a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" routerLinkActive="active" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Servicios <span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light"  routerLink="servicios/distribucion" mdbWavesEffect href="#">Distribucion</a>
+          <a class="dropdown-item waves-light"  routerLink="servicios/seguridad" mdbWavesEffect href="#">Seguridad</a>
+          <a class="dropdown-item waves-light"  routerLink="servicios/traslado" mdbWavesEffect href="#">Traslado</a>
+        </div>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light"  routerLink="contacto" mdbWavesEffect>Contacto</a>
+      </li>
+    </ul>
+    <!-- Links -->
+  </links>
+  <!-- Collapsible content -->
+</mdb-navbar>
+<!--/.Navbar-->
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-default">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -31,4 +64,4 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->

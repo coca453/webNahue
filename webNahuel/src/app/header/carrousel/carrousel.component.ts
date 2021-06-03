@@ -8,28 +8,9 @@ import { Subscription, timer } from 'rxjs';
 })
 export class CarrouselComponent implements OnInit {
 
-  subscription: Subscription;
-  imagen: number;
-  source = timer(1000, 3500);
 
   constructor() {
-    this.imagen = 0;
-    this.subscription = this.source.subscribe(val => {
-      switch (val % 3) {
-        case 0: {
-          this.imagen = val;
-          break
-        }
-        case 1: {
-          this.imagen = val;
-          break
-        }
-        case 2: {
-          this.imagen = val;
-          break
-        }
-      }
-    });
+   
   }
 
   ngOnInit(): any {
@@ -39,7 +20,7 @@ export class CarrouselComponent implements OnInit {
   ngOnDestroy(): void {
     //Called once, before the instance is destroyed.
     //Add 'implements OnDestroy' to the class.
-    this.subscription.unsubscribe();
+
   }
 
 }
