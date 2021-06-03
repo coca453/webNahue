@@ -1,3 +1,17 @@
-<nav class="">
-        <img class="img-fluid" src="../../../assets/img/LogoMenu.png" alt="">
+<nav class="container colores">
+    <div class="row" *ngIf="!mobile">
+        <div class="col-md">
+            <div class="d-flex justify-content-start">
+                <img srcset="../../../assets/img/logo.png" alt="">
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="d-flex justify-content-end">
+                <img srcset="../../../assets/img/logo2.png" alt="">
+            </div>
+        </div>
+    </div>
+        <div class="d-flex justify-content-center" *ngIf="mobile">
+            <img srcset="../../../assets/img/logo.png" alt="">
+    </div>
 </nav>
