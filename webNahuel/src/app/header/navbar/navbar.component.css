@@ -2,25 +2,6 @@
 nav a{
     font-size: 1.5rem !important;
 }
-.navbar-custom {
-    background-color: #5e92f3;
-}
-
-/* change the brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: #eeeeee;
-}
-
-/* change the link color */
-.navbar-custom .navbar-nav .nav-link {
-    color: #eeeeee;
-}
-
-
-/* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:focus .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: pink;
+.center{
+    
 }

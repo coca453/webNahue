@@ -1,31 +1,48 @@
-import { Routes, RouterModule } from '@angular/router';
+//Modulos
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule} from '@angular/router';
+//Pages
 import { PageComponent } from './page.component';
+import { HomeComponent } from './home/home.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { InstitucionalComponent } from './institucional/institucional.component';
-import { SeguridadComponent } from './seguridad/seguridad.component';
 import { ServiciosComponent } from './servicios/servicios.component';
-import { HomeComponent } from './home/home.component';
+//children
+import { SeguridadComponent } from './servicios/seguridad/seguridad.component';
+
+import { TrasladosComponent } from './servicios/traslados/traslados.component';
+import { DistribucionComponent } from './servicios/distribucion/distribucion.component';
 
 
 
 const routes: Routes = [
 
-    {   path: '', 
+    {
+        path: '',
         component: PageComponent,
-        children:[
-              {path: '', component: HomeComponent},
-              {path: 'contacto', component: ContactoComponent},
-              {path: 'institucional', component: InstitucionalComponent},
-              {path: 'seguridad', component: SeguridadComponent},
-              {path: 'servicios', component:ServiciosComponent},
-    ]}
+        children: [
+            { path: '', component: HomeComponent },
+            { path: 'home', component: HomeComponent},
+            { path: 'contacto', component: ContactoComponent },
+            { path: 'institucional', component: InstitucionalComponent },
+            {
+                path: 'servicios', component: ServiciosComponent,
+                children: [
+                    { path: 'seguridad', component: SeguridadComponent },
+                    { path: 'distribucion', component: DistribucionComponent },
+                    { path: 'traslado', component: TrasladosComponent },
+                ]
+            },
+
+
+        ]
+    }
 
 ];
 
 @NgModule({
-    
+
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class PageRoutingModule {}
+export class PageRoutingModule { }
