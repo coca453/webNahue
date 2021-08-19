@@ -10,7 +10,6 @@ import { ServiciosComponent } from './servicios/servicios.component';
 //children
 import { SeguridadComponent } from './servicios/seguridad/seguridad.component';
 
-import { TrasladosComponent } from './servicios/traslados/traslados.component';
 import { DistribucionComponent } from './servicios/distribucion/distribucion.component';
 
 
@@ -30,7 +29,6 @@ const routes: Routes = [
                 children: [
                     { path: 'seguridad', component: SeguridadComponent },
                     { path: 'distribucion', component: DistribucionComponent },
-                    { path: 'traslado', component: TrasladosComponent },
                 ]
             },
 

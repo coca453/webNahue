@@ -6,14 +6,12 @@ import { RouterModule } from '@angular/router';
 
 //Components
 import { SeguridadComponent } from '../servicios/seguridad/seguridad.component';
-import { TrasladosComponent } from '../servicios/traslados/traslados.component';
 import { DistribucionComponent } from '../servicios/distribucion/distribucion.component';
 
 
 @NgModule({
     declarations: [
         SeguridadComponent,
-        TrasladosComponent,
         DistribucionComponent
     ],
     imports: [
@@ -22,9 +20,7 @@ import { DistribucionComponent } from '../servicios/distribucion/distribucion.co
     ],
     exports: [
         SeguridadComponent,
-        TrasladosComponent,
         DistribucionComponent
-
     ]
 })
 export class ServiciosModule { }
