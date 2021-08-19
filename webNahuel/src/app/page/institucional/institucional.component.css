@@ -1,0 +1,13 @@
+/* Estilo para los titulos*/
+
+.titles {
+    color: black;
+    font-family: 'Habibi', serif;
+    font-weight: bolder;
+}
+
+.texto {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
