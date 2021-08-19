@@ -1,0 +1,12 @@
+/* Estilo para los titulos*/
+
+.titles {
+    color: black;
+    font-family: 'Habibi', serif;
+    font-weight: bolder;
+}
+
+.bodytext{
+    color:black;
+    font-family: 'Titillium Web', sans-serif;
+}

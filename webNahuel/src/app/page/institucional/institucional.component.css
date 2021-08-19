@@ -6,8 +6,7 @@
     font-weight: bolder;
 }
 
-.texto {
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
+.bodytext{
+    color:black;
+    font-family: 'Titillium Web', sans-serif;
 }
