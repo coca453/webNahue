@@ -1,0 +1,9 @@
+.texto {
+    text-align: left !important;
+}
+
+@media (max-width: 500px) {
+    .texto {
+        text-align: center !important;
+    }
+}
